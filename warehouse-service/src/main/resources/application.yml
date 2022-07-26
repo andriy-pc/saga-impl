@@ -1,0 +1,11 @@
+server:
+  port: 5004
+
+spring:
+  application:
+    name: "warehouse-service"
+
+config:
+  kafka:
+    order-processing-topic: "order-processing"
+    url: ${KAFKA_URL:localhost:29092}

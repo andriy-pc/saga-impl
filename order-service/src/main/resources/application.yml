@@ -1,0 +1,11 @@
+server:
+  port: 5001
+
+spring:
+  application:
+    name: "order-service"
+
+config:
+  kafka:
+    order-processing-topic: "order-processing"
+    url: ${KAFKA_URL:localhost:29092}

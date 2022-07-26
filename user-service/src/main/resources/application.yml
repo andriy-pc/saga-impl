@@ -1,0 +1,13 @@
+server:
+  port: 5003
+
+spring:
+  application:
+    name: "user-service"
+
+config:
+  warehouse:
+    url: ${WAREHOUSE_URL:localhost:5004}
+  kafka:
+    order-processing-topic: "order-processing"
+    url: ${KAFKA_URL:localhost:29092}
